@@ -1,0 +1,567 @@
+:root{
+  --light_green:#cfffdc; 
+  --green:#2e6f40;
+  --light-mid-green:#7ae097;
+  --mid_green:#68ba7f;
+  --black_green:#253d2c;
+  --white: #FFFFFF;
+  --gray: gainsboro; 
+  --form_button_color:#009428; 
+  
+  /* :;  */
+  
+  
+  
+  /* other form button color to try 
+  #83ffa4
+  #008123
+  #007d1e
+  
+  #00a82d
+  other optionsare listed here 
+  https://www.colorhexa.com/cfffdc
+  */
+  
+  }
+  
+  *{
+    font-size: 1.2rem;
+    box-sizing: border-box;
+  
+  }
+  
+  /* ************************** index - main section images ************************** */
+  .body-div-container{
+    display: flex;
+    flex-flow: row;
+    width: 90%;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: row;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+  
+  
+    margin-right: auto;
+    margin-left: auto;
+  
+  
+    text-align: center;
+    
+  }
+  
+  .body-div-timeline-container-unit{
+    display: flex;
+    flex-flow:row;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch; 
+   
+    width: 90%;
+    border-style: solid;
+    border-color:var(--black_green);
+    background-color: #f6fff9;
+    border-width: thick;
+  
+  
+    margin-right: auto;
+    margin-left: auto;
+  
+    border-radius: 15%;
+  
+  }
+  
+  
+  
+  
+  
+  /* *********************index*************** */
+  .body-div-container h1{
+    padding-top: 5%;
+    /* justify-content: center; */
+    text-align: center;
+  
+  }
+  
+  
+  .timeline-example-image{
+    width: 70%;
+    height: 70%;
+    /* margin: auto; */
+    align-content: center;
+    align-self: center;
+    border-radius: 10%;
+    /* padding-bottom: 1; */
+    /* border-bottom-left-radius: 10%; */
+    /* border-bottom-right-radius: 10%; */
+  
+    
+    
+  }
+  
+  .body-div-timeline-container-unit img{
+    object-fit: contain;
+    margin: 2%;
+    
+  
+  }
+  .div-time-bar{
+  
+    margin: auto;
+    padding-top: 0%;
+    width: 1%;
+    height: 150px;
+    border-style: solid;
+    border-color:var(--black_green);
+    background-color: var(--black_green);
+  }
+  
+  
+  .body-div-vision-steps-collage-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    flex-flow: column;
+    width: auto;
+     /* height:auto ; */
+    /* margin-top: 10%; */
+    margin-right: auto;
+    margin-left: auto;
+    /* height: 400px; */
+  
+  
+  
+  }
+  
+  
+  .body-div-vision-steps-collage-container img { 
+    width: 60%;
+    height: 90%;
+    /* width: auto; */
+    /* height: auto; */
+    border-style: solid;
+    background-color: #f6fff9;
+    border-width: medium;
+    padding: 2%;
+  
+   
+  }
+  
+  
+  
+  
+  /*********************** header *************************************/
+  
+  /* change the font to create more distinction with the body - check pinterest font */
+  header a, .view-action-bottom-buttons a{ 
+    font-family:"Mulish-regular", serif;
+    font-weight: bold;
+  }
+  .header-div-container{
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    width: 100%;
+  
+  }
+  
+  .header-div-logo-container {
+    display: inline-block;
+    width:40%;
+    position: relative;
+  }
+  
+  .header-nav-account-container {
+    width: 100%;
+    position: absolute;
+    top: 1%;
+    left: 25%;
+    justify-content: right;
+  }
+  
+  
+  
+  /******************* navbar below logo still inside header ************************************/
+  nav , .view-action-bottom-buttons{
+      text-align: center; 
+       color: black;
+        
+      
+  }
+  
+  nav a, .view-action-bottom-buttons a {
+    text-decoration:  none;
+    text-decoration-color: black;
+    color: black;
+    align-content: center;
+    
+  }
+  
+  .view-action-bottom-buttons {
+    padding-top: 10%;
+  }
+  
+  
+  .header-nav-lower-container {
+    padding-top: 15%;
+  }
+  
+  /* apply the button class to all nav */
+  .nav-a-button{
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: var(--light_green);
+    border-radius: 10%;
+    
+  } 
+  
+  /**********************************Action Form Page******** */
+  .main-div-action-h1{
+    text-align: center;
+    padding-top: 10%;
+  
+  }
+  
+  
+  .main-action-form{
+    padding: 5%;
+    margin-right: auto;
+    margin-left: auto; 
+    display: flex;
+    direction: column;
+    flex-flow: column;
+  
+  }
+  
+  .main-action-form input{
+    width: 20%;
+    height:1.5em;
+  
+  
+  }
+  
+  .main-action-form-div-submit-container{
+    padding-top: 15%;
+    text-align: center;
+  
+  
+  }
+  .main-action-form-div-input{
+  
+    text-align: center;
+  
+    background-color: var(--mid_green);
+    border-color: var(--mid_green);
+    border-style: none;
+    
+    color:black;
+    text-decoration: none;
+    padding-top: 1%;
+    padding-bottom: 1%; 
+    border-radius: 15%;
+    
+    border-style: none; 
+    border-color: none;
+    
+    
+    
+  
+  
+  }
+  
+  
+  
+  /*******************login registration form **************/
+  
+  .body-main-div-white-container{
+    border: blue;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 15%;
+  
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10%;
+    border-color: var(--black_green);
+    border-style: solid;
+    border-width: .25em;
+    
+  }
+  .div-h1-white-container{
+  
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+  
+  }
+  .body-div-login-form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .body-div-login-form-container form label{
+    display: flex;
+  
+    text-align: left;
+  }
+  
+  .login-form-input-style{
+    border-radius: 2%;
+    padding:2% 0% 2% 5%;
+    border-style: solid; 
+    border-color: var(--gray);
+  
+  }
+  
+  
+  .form-div-spacing{
+    padding-bottom:5%;
+  }
+  
+  .form-button-style{ 
+    background-color: var(--form_button_color);
+    border-color: var(--form_button_color);
+    border-style: none;
+  
+    color:var(--white);
+    text-decoration: none;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 10%;
+  
+    border-style: none; 
+    border-color: none;
+  
+  
+  
+  }
+  
+  
+    
+  .form-button-style a {
+    text-decoration: none;
+    text-decoration-color: white;
+    color:var(--white);
+  }
+  
+  .subtitle-slogan {
+    font-size: .7em;
+  }
+  
+  .main-div-mini-logo-container{
+    width:20%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+  
+  }
+  /*********************** Link/Button States  *************************/
+  
+  
+  
+  a:hover{
+  
+    background-color: #68ba7f;
+  }
+  
+  a:visited, a:active{
+    font-weight: bold;
+    background-color: #68ba7f;
+  }
+  
+  
+  
+  
+  /*****************************  Action - Add a Moment ******************************/
+  .drop-area {
+    width: 400px;
+    height: 200px;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 200px;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+  }
+  
+  .main-add-moment-container{
+    text-align: center;
+    padding-top: 10%;
+    padding-left:5%;
+    padding-right:5%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20%;
+  }
+  
+  .moment-form {
+    padding-top:10%;
+    text-align: left;
+  }
+  
+  .moment-form label { 
+    display: inline-block;
+    justify-self: left;
+    align-self: left;
+  
+  }
+  /*************************** footer  *********************/
+  
+  .footer-container {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    flex-flow: row;
+  
+    padding-top: 10%; 
+    /* margin-top: auto; */
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    font-size: .8rem;
+  
+  }
+  
+  .footer-container div h3{
+  
+    font-size: .9rem;
+  
+  }
+  
+  
+  footer div a {
+    text-decoration: none;
+    color: black;
+    font-size: .7rem;
+  
+  }
+  
+  
+  
+  
+  
+  /**************** from Google Fonts***************************** */
+  .merriweather-light {
+      font-family: "Merriweather", serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+    
+    .merriweather-regular {
+      font-family: "Merriweather", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    .merriweather-bold {
+      font-family: "Merriweather", serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+    
+    .merriweather-black {
+      font-family: "Merriweather", serif;
+      font-weight: 900;
+      font-style: normal;
+    }
+    
+    .merriweather-light-italic {
+      font-family: "Merriweather", serif;
+      font-weight: 300;
+      font-style: italic;
+    }
+    
+    .merriweather-regular-italic {
+      font-family: "Merriweather", serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+    
+    .merriweather-bold-italic {
+      font-family: "Merriweather", serif;
+      font-weight: 700;
+      font-style: italic;
+    }
+    
+    .merriweather-black-italic {
+      font-family: "Merriweather", serif;
+      font-weight: 900;
+      font-style: italic;
+    }
+    
+  
+  
+    .mulish-regular> {
+      font-family: "Mulish", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+  
+
+
+
+
+
+/* Original from the app  
+
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
