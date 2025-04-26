@@ -13,6 +13,7 @@ import Login from './components/Login'
 import Timeline from './components/Timeline'
 import Footer from './shared/Footer'
 import Header from './shared/Header'
+import { Routes, Route } from "react-router-dom";
 
 
 
@@ -22,15 +23,21 @@ function App() {
   return(
     <>
         <Header/>
-        <Home/>
-        <Login/>
-        <Timeline/>
-        <Action/>
-        <ActionAddMoment/>
-        <ActionViewMoment/>
-        <CreateNewTimeline/>
-        <Explore/>
+        <Routes>
 
+          <Route path ="/" element={<Home />}/>
+          <Route path ="/" element={<Login />}/>
+          <Route path ="/" element={<Timeline />}/>
+          <Route path ="/" element={<Action />}/>
+          <Route path ="/" element={<ActionAddMoment />}/>
+          <Route path ="/" element={<ActionViewMoment />}/>
+          <Route path ="/" element={<CreateNewTimeline />}/>
+          <Route path ="/" element={<Explore />}/>
+          {/* <Route path ="/" element={<Signup />}/> */}
+          {/* <Route path ="/" element={<Admin />}/> */}
+
+
+        </Routes>
         <Footer/>
     
 
