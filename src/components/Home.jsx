@@ -1,4 +1,19 @@
+import React, { useState, useEffect } from "react";
+
 function Home() {
+  const [moments, setMoments] = useState([]);
+
+  const url = "https://visually.free.beeceptor.com/api/moments";
+
+  useEffect(() => {
+    fetch(`${url}`)
+      .then((response) => response.json())
+      .then((result) => {
+        console.log(result);
+        setMoments(result.data.moments);
+      });
+  });
+
   return (
     <main>
       <div className="body-div-container">

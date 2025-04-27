@@ -26,4 +26,3 @@ const moments = [
         theWhy:"Strong body. ",
         coverImageUrl: "outdoor-community-yoga.jpg",
     }
-]

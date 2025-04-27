@@ -1,5 +1,4 @@
-import { useState } from 'react'
-
+import React, { useState, useEffect } from 'react'
 import './App.css'
 import Action from './components/Action'
 import ActionAddMoment from './components/ActionAddMoment'
@@ -21,6 +20,9 @@ import { Routes, Route } from "react-router-dom";
 
 
 function App() {
+
+  const [user,setUser] = useState(localStorage.getItem("user") || {});
+
   return(
     <>
         <Header/>
