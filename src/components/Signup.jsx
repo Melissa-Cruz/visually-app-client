@@ -43,7 +43,7 @@ function Signup() {
             </div>
 
 
-
+            <div>
             <label htmlFor="email_address">Email</label>
             <input
                 className="login-form-input-style"

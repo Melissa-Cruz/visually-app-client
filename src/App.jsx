@@ -4,15 +4,16 @@ import './App.css'
 import Action from './components/Action'
 import ActionAddMoment from './components/ActionAddMoment'
 import ActionViewMoment from './components/ActionViewMoment'
-// import Admin from './components/Admin'
+import Admin from './components/Admin'
 import CreateNewTimeline from './components/CreateNewTimeline'
 import Home from './components/Home'
 import Explore from './components/Explore'
 import Login from './components/Login'
-// import Signup from './components/Signup'
+import Signup from './components/Signup'
 import Timeline from './components/Timeline'
 import Footer from './shared/Footer'
 import Header from './shared/Header'
+import Contact from './components/Contact'
 import { Routes, Route } from "react-router-dom";
 
 
@@ -25,16 +26,18 @@ function App() {
         <Header/>
         <Routes>
 
-          <Route path ="/" element={<Home />}/>
-          <Route path ="/" element={<Login />}/>
-          <Route path ="/" element={<Timeline />}/>
-          <Route path ="/" element={<Action />}/>
-          <Route path ="/" element={<ActionAddMoment />}/>
-          <Route path ="/" element={<ActionViewMoment />}/>
-          <Route path ="/" element={<CreateNewTimeline />}/>
-          <Route path ="/" element={<Explore />}/>
-          {/* <Route path ="/" element={<Signup />}/> */}
-          {/* <Route path ="/" element={<Admin />}/> */}
+          <Route path ="/home" element={<Home />}/>
+          <Route path ="/login" element={<Login />}/>
+          <Route path ="/timeline" element={<Timeline />}/>
+          <Route path ="/action" element={<Action />}/>
+          <Route path ="/actionaddmoment" element={<ActionAddMoment />}/>
+          <Route path ="/actionviewmoment" element={<ActionViewMoment />}/>
+          <Route path ="/createnewtimeline" element={<CreateNewTimeline />}/>
+          <Route path ="/explore" element={<Explore />}/>
+          <Route path ="/signup" element={<Signup />}/>
+          <Route path ="/admin" element={<Admin />}/>
+          <Route path ="/contact" element={<Contact />}/>
+
 
 
         </Routes>
