@@ -41,11 +41,11 @@ function ActionAddMoment() {
           </div>
 
           <div>
-            <label htmlFor="moment_milestones"> Milestone:</label>
+            <label htmlFor="moment_milestone"> Milestone:</label>
             <input
               type="text"
-              name="moment_milestones"
-              id="moment_milestones"
+              name="moment_milestone"
+              id="moment_milestone"
             />
           </div>
 
@@ -53,8 +53,8 @@ function ActionAddMoment() {
             <label htmlFor="moment_date"> Date of moment:</label>
             <input
               type="date"
-              name="moment_milestones"
-              id="moment_milestones"
+              name="moment_moment_date"
+              id="moment_date"
             />
           </div>
 

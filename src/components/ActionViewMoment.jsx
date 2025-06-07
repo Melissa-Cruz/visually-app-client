@@ -23,7 +23,7 @@ function ActionViewMoment() {
             <span> Feelings:[moment_feelings]</span>
           </div>
           <div>
-            <span> Milestone:[moment milestone]</span>
+            <span> Milestone:[moment_milestone]</span>
           </div>
           <div>
             <span> Date of monent:[moment_date]</span>
