@@ -3,10 +3,11 @@ import React, { useState, useEffect } from "react";
 function Home() {
   const [moments, setMoments] = useState([]);
 
-  const url = "https://visually.free.beeceptor.com/api/moments";
-
+  // const url = "https://visually.free.beeceptor.com/api/moments";
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;  
+  
   useEffect(() => {
-    fetch(`${url}`)
+    fetch(`${API_BASE_URL}/api/moments`)
       .then((response) => response.json())
       .then((result) => {
         console.log(result);
