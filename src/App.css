@@ -25,7 +25,7 @@
   }
   
   *{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     box-sizing: border-box;
   
   }
@@ -160,48 +160,52 @@
     font-family:"Mulish-regular", serif;
     font-weight: bold;
   }
- .header-div-container{ 
-    /* display: flex;
-    flex-flow: row;
-    flex-direction: row; */
-   border-color: blue;
-   border-style: solid;
-    width: 100%;
+ /* .header-div-container{  */
+     /* display: inline-flex; */
+    /* flex-flow: row;
+    flex-direction: row;  */
+   /* border-color: blue; */
+   /* border-style: solid; */
+    /* width: 100%; */
     /* margin: 5%; */
   
   
-  } 
+  /* }  */
   
   .header-div-logo-container {
-    display: inline-block;
-    top: 1%;
-    width: 40%;
+    /* display: inline-block; */
+    top: -1%;
+    width: 20%;
+    height:8%;
     /* align-items: end; */
     /* flex-grow: 1; */
-    border-color: red;
-    border-style:solid;
+    /* border-color: red; */
+    /* border-style:solid; */
     /* position: relative; */
     position:absolute; 
   }
   
   .header-nav-account-container {
+    display: flex;
     /* display: inline; */
     /* flex-flow: row;
     flex-direction: row; */
     /* justify-content: space-evenly; */
     /* flex-flow: row; */
-    width: 60%;
+    width: 100%;
     /* flex-grow: 1; */
     /* align-items:; */
-
+    
     position: absolute;
     top: 1%;
-    right: 1%;
-    border-color: red;
-    border-style: solid;
-    /* justify-content: left; */
+    /* right: -20%; */
+    /* border-color: red; */
+    /* border-style: solid;  */
+    /* align-items: end; */
+    justify-content: flex-end;
   }
   
+
 
   /* issues with spacing between buttons */
   .divider{
@@ -238,7 +242,7 @@
   
   /* apply the button class to all nav */
   .nav-a-button{
-    padding-right: 3%;
+    padding-right: 2%;
     padding-left: 2%;
     padding-top: 1%;
     padding-bottom: 1%;

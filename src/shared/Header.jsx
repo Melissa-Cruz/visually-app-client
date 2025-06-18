@@ -11,13 +11,13 @@ function Header(){
                     </a>
                 </div>
 
-                <div class="header-nav-account-container">
-                    <nav>
+                {/* <div class="header-nav-account-container"> */}
+                    <nav class="header-nav-account-container">
                         <a class="nav-a-button" href="#" target="_self">Login</a>
                         <div class="divider"/>
                         <a class="nav-a-button" href="#" target="_self">Sign Up</a>
                     </nav>
-                </div>
+                {/* </div> */}
 
             </div>
 
