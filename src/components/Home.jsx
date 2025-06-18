@@ -7,11 +7,11 @@ function Home() {
   const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;  
   
   useEffect(() => {
-    fetch(`${API_BASE_URL}/api/moments`)
+    fetch(`${API_BASE_URL}/api/timelines`)
       .then((response) => response.json())
       .then((result) => {
         console.log(result);
-        setMoments(result.data.moments);
+        setMoments(result.data.timelines);
       });
   });
 
@@ -25,7 +25,7 @@ function Home() {
           <h2>Vision: Community Fitness Instructor</h2>
           <img
             className="timeline-example-image"
-            src="public/images/outdoor-community-yoga.jpg"
+            src="./images/outdoor-community-yoga.jpg"
             alt="People are outside doing a stretch on the grass. The people are wearing work out clothes and are on their knee with hands outstretched turning to the side."
           />
         </div>
@@ -40,7 +40,7 @@ function Home() {
             <h3>Vision Step: Explore Studios</h3>
             <img
               className="timeline-example-image"
-              src="public/images/indoor-community-yoga.jpg"
+              src="./images/indoor-community-yoga.jpg"
               alt="People are indoors in work out clothes laying out their identical yoga mats"
             />
           </div>
@@ -49,7 +49,7 @@ function Home() {
             <h3>Vision Step: Choose a Home Studio </h3>
             <img
               className="timeline-example-image"
-              src="public/images/puppy-pose-in-class-yoga.jpg"
+              src="./images/puppy-pose-in-class-yoga.jpg"
               alt="Three people lined up  doing puppy pose on their yoga mat."
             />
           </div>
@@ -58,7 +58,7 @@ function Home() {
             <h3>Vision Step: Saving for Teacher Training</h3>
             <img
               class="timeline-example-image"
-              src="public/images/savings-calculator-on-laptop.jpg"
+              src="./images/savings-calculator-on-laptop.jpg"
               alt="Cash piles, calculator and spreadsheet open on laptop. "
             />
           </div>
@@ -69,7 +69,7 @@ function Home() {
             <h3>Vision Step: Enjoy the Practice</h3>
             <img
               className="timeline-example-image"
-              src="public/images/yoga-class-touch-toes.jpg"
+              src="./images/yoga-class-touch-toes.jpg"
               alt="FPeople are in yoga attire on their mat all standing up and reaching for their toes."
             />
           </div>
