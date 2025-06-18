@@ -14,6 +14,7 @@ function Header(){
                 <div class="header-nav-account-container">
                     <nav>
                         <a class="nav-a-button" href="#" target="_self">Login</a>
+                        <div class="divider"/>
                         <a class="nav-a-button" href="#" target="_self">Sign Up</a>
                     </nav>
                 </div>

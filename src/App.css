@@ -160,28 +160,55 @@
     font-family:"Mulish-regular", serif;
     font-weight: bold;
   }
-  .header-div-container{
-    display: flex;
+ .header-div-container{ 
+    /* display: flex;
     flex-flow: row;
-    flex-direction: row;
+    flex-direction: row; */
+   border-color: blue;
+   border-style: solid;
     width: 100%;
+    /* margin: 5%; */
   
-  }
+  
+  } 
   
   .header-div-logo-container {
     display: inline-block;
-    width:40%;
-    position: relative;
+    top: 1%;
+    width: 40%;
+    /* align-items: end; */
+    /* flex-grow: 1; */
+    border-color: red;
+    border-style:solid;
+    /* position: relative; */
+    position:absolute; 
   }
   
   .header-nav-account-container {
-    width: 100%;
+    /* display: inline; */
+    /* flex-flow: row;
+    flex-direction: row; */
+    /* justify-content: space-evenly; */
+    /* flex-flow: row; */
+    width: 60%;
+    /* flex-grow: 1; */
+    /* align-items:; */
+
     position: absolute;
     top: 1%;
-    left: 25%;
-    justify-content: right;
+    right: 1%;
+    border-color: red;
+    border-style: solid;
+    /* justify-content: left; */
   }
   
+
+  /* issues with spacing between buttons */
+  .divider{
+    width:5%;
+    height:auto;
+    display:inline-block;
+}
   
   
   /******************* navbar below logo still inside header ************************************/
@@ -211,7 +238,7 @@
   
   /* apply the button class to all nav */
   .nav-a-button{
-    padding-right: 2%;
+    padding-right: 3%;
     padding-left: 2%;
     padding-top: 1%;
     padding-bottom: 1%;
