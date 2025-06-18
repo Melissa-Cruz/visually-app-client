@@ -6,7 +6,7 @@ function Header(){
 
                 <div class="header-div-logo-container">
                     <a href="#" target ="_self">
-                        <img src="public/images/Visually_timeline_app_logo.svg" alt="the company logo is the word visually written in cursive font in a red-pink color"/>
+                        <img src="./images/Visually_timeline_app_logo.svg" alt="the company logo is the word visually written in cursive font in a red-pink color"/>
 
                     </a>
                 </div>
