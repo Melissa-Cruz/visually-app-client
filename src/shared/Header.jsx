@@ -26,7 +26,7 @@ function Header({ user, setUser }) {
     })
     .catch((error) => {
       console.log(error);
-      navigate("/admin");
+      navigate("/signup");
     });
 
   return (
@@ -55,7 +55,7 @@ function Header({ user, setUser }) {
 
           {/* <Link to="/about">ABOUT</Link> */}
           {user.username ? (
-            ((<Link to="/admin">ADMIN</Link>),
+            ((<Link to="/">Home</Link>),
             (
               <a href="#" onClick={handleLogout}>
                 LOGOUT
