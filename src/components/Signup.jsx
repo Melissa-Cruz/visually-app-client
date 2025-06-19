@@ -94,7 +94,7 @@ function Signup({user, setUser}) {
                 type="text"
                 name="username"
                 id="username"
-                placeholder="Email"
+                placeholder="Username"
             />
             </div>
 
