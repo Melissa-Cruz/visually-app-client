@@ -12,18 +12,18 @@ function Header(){
                 </div>
 
                 {/* <div class="header-nav-account-container"> */}
-                    {/* <nav class="header-nav-account-container">
+                    <nav class="header-nav-account-container">
                         <a class="nav-a-button" href="#" target="_self">Login</a>
                         <div class="divider"/> 
                         <a class="nav-a-button" href="#" target="_self">Sign Up</a>
-                    </nav> */}
+                    </nav>
                 {/* </div> */}
 
-                <nav class="header-nav-account-container">
-                        <Link class="nav-a-button" to="/login">Login</Link>
+                {/* <nav class="header-nav-account-container">
+                        <Link to="/login">Login</Link>
                         <div class="divider"/> 
-                        <Link class="nav-a-button" to="/signup">Sign Up</Link>
-                    </nav>
+                        <Link to="/signup">Sign Up</Link>
+                    </nav> */}
 
 
             </div>
