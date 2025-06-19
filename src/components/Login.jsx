@@ -27,7 +27,7 @@ function Login() {
     .then((response) => response.json())
     .then((result) => {
         console.log(result);
-        console.log("success the Logi");
+        console.log("success the Login");
         localStorage.setItem("user", JSON.stringify(result.data));
         setUser(result.data);
         navigate(`/admin`);
