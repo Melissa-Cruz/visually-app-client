@@ -22,7 +22,7 @@ function Header({ user, setUser }) {
       console.log(result);
       setUser({});
       localStorage.removeItem("user");
-      navigate("/");
+      navigate("/admin");
     })
     .catch((error) => {
       console.log(error);
@@ -55,7 +55,7 @@ function Header({ user, setUser }) {
 
           {/* <Link to="/about">ABOUT</Link> */}
           {user.username ? (
-            ((<Link to="/">Home</Link>),
+            ((<Link to="/admin">Admin</Link>),
             (
               <a href="#" onClick={handleLogout}>
                 LOGOUT

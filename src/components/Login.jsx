@@ -1,4 +1,42 @@
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
+
+
 function Login() {
+  const navigate = useNavigate();
+
+  const handleLoginFormSubmit = (e) =>{
+    e.preventDefault();
+
+    const body = {
+        username: e.target.username.value, 
+        password: e.target.password.value
+    }
+
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+
+  fetch(`${API_BASE_URL}/auth/login/local`, {
+    method:"POST", 
+    headers: {
+        "Content-Type":"application/json"
+    },
+    body:JSON.stringify(body)
+})
+    .then((response) => response.json())
+    .then((result) => {
+        console.log(result);
+        console.log("success the Logi");
+        localStorage.setItem("user", JSON.stringify(result.data));
+        setUser(result.data);
+        navigate(`/admin`);
+    })
+    .catch((error) => console.log(error));
+
+};
+
+
   return (
     <main>
       <div className="body-main-div-white-container">
@@ -20,12 +58,12 @@ function Login() {
         <div className="body-div-login-form-container">
           <form>
             <div className="form-div-spacing">
-              <label htmlFor="email_address:">Email</label>
+              <label htmlFor="emailAddress:">Email</label>
               <input
                 className="login-form-input-style"
                 type="email"
-                name="email_address"
-                id="email_address"
+                name="emailAddress"
+                id="emailAddress"
                 placeholder="Email"
               />
             </div>
