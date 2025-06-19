@@ -118,7 +118,7 @@ function Signup({user, setUser}) {
             <div className="form-div-spacing">
             <input
                 className="form-button-style"
-                type="button"
+                type="submit"
                 value="Submit"
             />
             </div>

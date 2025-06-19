@@ -56,7 +56,7 @@ function Login() {
         </div>
 
         <div className="body-div-login-form-container">
-          <form>
+          <form onSubmit={handleLoginFormSubmit}>
             <div className="form-div-spacing">
               <label htmlFor="emailAddress:">Email</label>
               <input
