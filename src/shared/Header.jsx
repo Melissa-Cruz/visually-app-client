@@ -14,7 +14,7 @@ function Header(){
                 {/* <div class="header-nav-account-container"> */}
                     <nav class="header-nav-account-container">
                         <a class="nav-a-button" href="#" target="_self">Login</a>
-                        <div class="divider"/>
+                        <div class="divider"/> 
                         <a class="nav-a-button" href="#" target="_self">Sign Up</a>
                     </nav>
                 {/* </div> */}
@@ -24,7 +24,11 @@ function Header(){
 
             <nav class ="header-nav-lower-container">
                 <a class="nav-a-button" href="#" target="_self">Timeline</a>
+                <div class="divider"/> 
+                <div class="divider"/> 
                 <a class="nav-a-button" href="#" target="_self">Action</a>
+                <div class="divider"/> 
+                <div class="divider"/> 
                 <a class="nav-a-button" href="#" target="_self">Explore</a>
 
             </nav>

@@ -20,6 +20,7 @@ function Home() {
       <div className="body-div-container">
         <h1>Bring your next vision board into vision steps.</h1>
         <br />
+        {/* <div className="body-div-vision-steps-collage-container"> */}
 
         <div className="body-div-timeline-container-unit">
           <h2>Vision: Community Fitness Instructor</h2>
@@ -30,6 +31,7 @@ function Home() {
           />
         </div>
 
+        <br />
         <br />
 
         <div>

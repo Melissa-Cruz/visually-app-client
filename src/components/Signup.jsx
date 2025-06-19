@@ -1,4 +1,37 @@
-function Signup() {
+import React, { useEffect, useState} from "react";
+import { useNavigate } from "react-router-dom";
+
+function Signup({user, setUser}) {
+    const navigate = useNavigate();
+    
+    const handleSignupFormSubmit = (e) =>{
+        e.preventDefault();
+
+        const body = {
+            firstName: e.target.firstName.value,
+            lastName: e.target.lastName.value,
+            emailAddress: e.target.emailAddress.value,
+            username:e.target.username.value,
+            password:e.target.password.value
+       }
+       const API_BASE_URL= import.meta.env.VITE_API_BASE_URL;
+
+       fetch(`${API_BASE_URL}/auth/register`,{
+        method:"POST", 
+        headers:{
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify(body)
+       }).then((response)=>response.json())
+       .then((result)=>{
+        console.log(result);
+        console.log("success for sign up"); 
+        localStorage.setItem("user", JSON.stringify(result.data));
+        setUser(result.data);
+        navigate(`/admin`);
+       })
+       .catch((error)=>console.log(error));
+    };
 
   return   ( 
     <main>
@@ -7,7 +40,7 @@ function Signup() {
         <div className="main-div-mini-logo-container">
             <a href="index.html" target="_self">
             <img
-                src="public/images/Visually_timeline_app_logo.svg"
+                src="./images/Visually_timeline_app_logo.svg"
                 alt="the company logo is the word visually written in cursive font in a red-pink color"
             />
             </a>
@@ -21,35 +54,46 @@ function Signup() {
         <div className="body-div-login-form-container">
         <form>
             <div className="form-div-spacing">
-            <label htmlFor="first_name">First Name</label>
+            <label htmlFor="firstName">First Name</label>
             <input
                 className="login-form-input-style"
                 type="text"
-                name="first_name"
-                id="first_name"
+                name="firstName"
+                id="firstName"
                 placeholder="First Name"
             />
             </div>
 
             <div className="form-div-spacing">
-            <label htmlFor="last_name">Last Name</label>
+            <label htmlFor="lastName">Last Name</label>
             <input
                 className="login-form-input-style"
                 type="text"
-                name="last_name"
-                id="last_name"
+                name="lastName"
+                id="lastName"
                 placeholder="Last Name"
             />
             </div>
 
 
             <div>
-            <label htmlFor="email_address">Email</label>
+            <label htmlFor="emailAddress">Email</label>
             <input
                 className="login-form-input-style"
                 type="email"
-                name="email_address"
-                id="email_address"
+                name="emailAddress"
+                id="emailAddress"
+                placeholder="Email"
+            />
+            </div>
+
+            <div>
+            <label htmlFor="username">Username</label>
+            <input
+                className="login-form-input-style"
+                type="text"
+                name="username"
+                id="username"
                 placeholder="Email"
             />
             </div>

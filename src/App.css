@@ -25,7 +25,7 @@
   }
   
   *{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     box-sizing: border-box;
   
   }
@@ -42,8 +42,6 @@
     align-self: center;
     align-content: center;
     justify-content: center;
-  
-  
     margin-right: auto;
     margin-left: auto;
   
@@ -59,7 +57,7 @@
     flex-wrap: wrap;
     align-items: stretch; 
    
-    width: 90%;
+    width: 65%;
     border-style: solid;
     border-color:var(--black_green);
     background-color: #f6fff9;
@@ -73,10 +71,7 @@
   
   }
   
-  
-  
-  
-  
+
   /* *********************index*************** */
   .body-div-container h1{
     padding-top: 5%;
@@ -177,6 +172,7 @@
     top: -1%;
     width: 20%;
     height:8%;
+    left: 1%;
     /* align-items: end; */
     /* flex-grow: 1; */
     /* border-color: red; */
@@ -209,7 +205,7 @@
 
   /* issues with spacing between buttons */
   .divider{
-    width:5%;
+    width:2%;
     height:auto;
     display:inline-block;
 }
