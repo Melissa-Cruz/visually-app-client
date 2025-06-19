@@ -1,52 +1,98 @@
-function Header(){
-    return(
-        <header>
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-            <div class="header-div-container">
+function Header({ user, setUser }) {
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+  const navigate = useNavigate();
+  const handleLogout = (e) => {};
 
-                <div class="header-div-logo-container">
-                    <a href="#" target ="_self">
-                        <img src="./images/Visually_timeline_app_logo.svg" alt="the company logo is the word visually written in cursive font in a red-pink color"/>
+  // const url = "https://course-project-codesquad-comics-server.onrender.com/logout";
 
-                    </a>
-                </div>
+  fetch(`${API_BASE_URL}/logout`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    // it doesn't specify in the directions but I need it needs a body
+    body: JSON.stringify(user),
+  })
+    .then((response) => response.json())
+    .then((result) => {
+      console.log(result);
+      setUser({});
+      localStorage.removeItem("user");
+      navigate("/");
+    })
+    .catch((error) => {
+      console.log(error);
+      navigate("/admin");
+    });
 
-                {/* <div class="header-nav-account-container"> */}
-                    <nav class="header-nav-account-container">
+  return (
+    <header>
+      <div class="header-div-container">
+        <div class="header-div-logo-container">
+          <a href="#" target="_self">
+            <img
+              src="./images/Visually_timeline_app_logo.svg"
+              alt="the company logo is the word visually written in cursive font in a red-pink color"
+            />
+          </a>
+        </div>
+
+        {/* <div class="header-nav-account-container"> */}
+        {/* the nav was working */}
+        {/* <nav class="header-nav-account-container">
                         <a class="nav-a-button" href="#" target="_self">Login</a>
                         <div class="divider"/> 
                         <a class="nav-a-button" href="#" target="_self">Sign Up</a>
-                    </nav>
-                {/* </div> */}
-
-                {/* <nav class="header-nav-account-container">
-                        <Link to="/login">Login</Link>
-                        <div class="divider"/> 
-                        <Link to="/signup">Sign Up</Link>
                     </nav> */}
+        {/* </div> */}
 
+        <nav class="header-nav-account-container">
+          {/* <Link to="/">HOME</Link> */}
 
-            </div>
+          {/* <Link to="/about">ABOUT</Link> */}
+          {user.username ? (
+            ((<Link to="/admin">ADMIN</Link>),
+            (
+              <a href="#" onClick={handleLogout}>
+                LOGOUT
+              </a>
+            ))
+          ) : (
+            <Link to="/Login">Login</Link>
+          )}
 
+{/* <Link to="/Login">Login</Link> */}
 
-            <nav class ="header-nav-lower-container">
-                <a class="nav-a-button" href="#" target="_self">Timeline</a>
-                <div class="divider"/> 
-                <div class="divider"/> 
-                <a class="nav-a-button" href="#" target="_self">Action</a>
-                <div class="divider"/> 
-                <div class="divider"/> 
-                <a class="nav-a-button" href="#" target="_self">Explore</a>
+          <div class="divider" />
+          <Link to="/signup">Sign Up</Link>
+        </nav>
+      </div>
 
-            </nav>
+      <nav class="header-nav-lower-container">
+        <a class="nav-a-button" href="#" target="_self">
+          Timeline
+        </a>
+        <div class="divider" />
+        <div class="divider" />
+        <a class="nav-a-button" href="#" target="_self">
+          Action
+        </a>
+        <div class="divider" />
+        <div class="divider" />
+        <a class="nav-a-button" href="#" target="_self">
+          Explore
+        </a>
+      </nav>
 
-            
-            <div>
-                <i class="fa-solid fa-bars"></i>
-            </div>
-
-        </header>
-    )
-};
+      <div>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+  );
+}
 
 export default Header;

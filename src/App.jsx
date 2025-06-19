@@ -25,18 +25,17 @@ function App() {
 
   return(
     <>
-        <Header/>
+        <Header user={user} setUser={setUser}/>
         <Routes>
-
           <Route path ="/" element={<Home />}/>
-          <Route path ="/login" element={<Login />}/>
+          <Route path ="/login" element={<Login user={user} setUser={setUser} />}/>
           <Route path ="/timeline" element={<Timeline />}/>
           <Route path ="/action" element={<Action />}/>
           <Route path ="/actionaddmoment" element={<ActionAddMoment />}/>
           <Route path ="/actionviewmoment" element={<ActionViewMoment />}/>
           <Route path ="/createnewtimeline" element={<CreateNewTimeline />}/>
           <Route path ="/explore" element={<Explore />}/>
-          <Route path ="/signup" element={<Signup />}/>
+          <Route path ="/signup" element={<Signup user={user} setUser={setUser} />}/>
           <Route path ="/admin" element={<Admin />}/>
           <Route path ="/contact" element={<Contact />}/>
 
