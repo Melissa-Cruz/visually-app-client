@@ -30,8 +30,8 @@ function Login() {
         console.log("success the Login");
         localStorage.setItem("user", JSON.stringify(result.data));
         setUser(result.data);
-        navigate(`/admin`);
     })
+    .then(navigate(`/admin`))
     .catch((error) => console.log(error));
 
 };

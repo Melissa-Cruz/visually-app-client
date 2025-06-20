@@ -28,8 +28,8 @@ function Signup({user, setUser}) {
         console.log("success for sign up"); 
         localStorage.setItem("user", JSON.stringify(result.data));
         setUser(result.data);
-        navigate(`/admin`);
        })
+       .then(navigate(`/admin`))
        .catch((error)=>console.log(error));
     };
 
