@@ -29,7 +29,7 @@ function Signup({user, setUser}) {
         localStorage.setItem("user", JSON.stringify(result.data));
         setUser(result.data);
        })
-       .then(navigate(`/admin`))
+       .then(navigate(`${API_BASE_URL}/admin`))
        .catch((error)=>console.log(error));
     };
 
