@@ -3,8 +3,12 @@ import { useNavigate } from "react-router-dom";
 
 
 
-function Login() {
+function Login({user,setUser}) {
   const navigate = useNavigate();
+
+  if (user.username) {
+    navigate("/admin");
+  }
 
   const handleLoginFormSubmit = (e) =>{
     e.preventDefault();
