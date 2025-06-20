@@ -31,7 +31,7 @@ function Login() {
         localStorage.setItem("user", JSON.stringify(result.data));
         setUser(result.data);
     })
-    .then(navigate(`${API_BASE_URL}/admin`))
+    .then(navigate(`/admin`))
     .catch((error) => console.log(error));
 
 };
