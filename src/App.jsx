@@ -35,7 +35,8 @@ function App() {
           <Route path ="/actionviewmoment" element={<ActionViewMoment />}/>
           <Route path ="/createnewtimeline" element={<CreateNewTimeline />}/>
           <Route path ="/explore" element={<Explore />}/>
-          <Route path ="/signup" element={<Signup user={user} setUser={setUser} />}/>
+          <Route path ="/register" element={<Signup user={user} setUser={setUser} />}/>
+          {/* <Route path ="/signup" element={<Signup user={user} setUser={setUser} />}/> */}
           <Route path ="/admin" element={<Admin />}/>
           <Route path ="/contact" element={<Contact />}/>
 
