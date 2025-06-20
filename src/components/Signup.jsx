@@ -41,8 +41,7 @@ function Signup({user, setUser}) {
             <a href="index.html" target="_self">
             <img
                 src="./images/Visually_timeline_app_logo.svg"
-                alt="the company logo is the word visually written in cursive font in a red-pink color"
-            />
+                alt="the company logo is the word visually written in cursive font in a red-pink color"/>
             </a>
         </div>
         <h1>Welcome to Visually</h1>
