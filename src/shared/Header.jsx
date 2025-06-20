@@ -9,7 +9,7 @@ function Header({ user, setUser }) {
 
   // const url = "https://course-project-codesquad-comics-server.onrender.com/logout";
 
-  fetch(`${API_BASE_URL}/logout`, {
+  fetch(`${API_BASE_URL}/auth/logout`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
