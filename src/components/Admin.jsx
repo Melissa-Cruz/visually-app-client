@@ -1,5 +1,15 @@
+import React, { useEffect, useState } from "react";
+
 function Admin() {
-  return <div>
+
+  const API_BASE_URL= import.meta.env.VITE_API_BASE_URL;
+  const [timelines, setTimelines] = useState([]);
+
+
+  return (
+  
+  <main>
+  <div>
     
     
     Admin
@@ -9,7 +19,9 @@ function Admin() {
 
 
 
-  </div>;
+  </div>
+  </main>)
+  ;
 }
 
 export default Admin;
