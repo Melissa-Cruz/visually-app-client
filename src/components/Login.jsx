@@ -62,13 +62,13 @@ function Login({user,setUser}) {
         <div className="body-div-login-form-container">
           <form onSubmit={handleLoginFormSubmit}>
             <div className="form-div-spacing">
-              <label htmlFor="emailAddress:">Email</label>
+              <label htmlFor="username:">Username</label>
               <input
                 className="login-form-input-style"
-                type="email"
-                name="emailAddress"
-                id="emailAddress"
-                placeholder="Email"
+                type="username"
+                name="username"
+                id="username"
+                placeholder="username"
               />
             </div>
 
