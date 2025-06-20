@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 function Login({user,setUser}) {
   const navigate = useNavigate();
+  
 
   if (user.username) {
     navigate("/admin");
@@ -32,10 +33,11 @@ function Login({user,setUser}) {
     .then((result) => {
         console.log(result);
         console.log("success the Login");
-        localStorage.setItem("user", JSON.stringify(result.data));
-        setUser(result.data);
-    })
-    .then(navigate(`/admin`))
+        localStorage.setItem("user", JSON.stringify(result.data.user));
+        setUser(result.data.user);
+        navigate("/admin")
+      })
+    // .then(navigate("/admin"))
     .catch((error) => console.log(error));
 
 };

@@ -29,10 +29,10 @@ function Signup({user, setUser}) {
        .then((result)=>{
         console.log(result);
         console.log("success for sign up"); 
-        localStorage.setItem("user", JSON.stringify(result.data));
-        setUser(result.data);
+        localStorage.setItem("user", JSON.stringify(result.data.user));
+        setUser(result.dat.user);
+        (navigate("/admin"));
        })
-       .then(navigate(`/admin`))
        .catch((error)=>console.log(error));
     };
 
