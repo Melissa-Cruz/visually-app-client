@@ -32,9 +32,10 @@ function Login({user,setUser}) {
     .then((response) => response.json())
     .then((result) => {
         console.log(result);
+        console.log(result.data);
         console.log("success the Login");
-        localStorage.setItem("user", JSON.stringify(result.data.user));
-        setUser(result.data.user);
+        localStorage.setItem("user", JSON.stringify(result.data));
+        setUser(result.data);
         navigate("/admin")
       })
     // .then(navigate("/admin"))
