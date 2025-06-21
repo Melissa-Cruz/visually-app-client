@@ -32,8 +32,8 @@ function Header({ user, setUser }) {
   };
   return (
     <header>
-      <div class="header-div-container">
-        <div class="header-div-logo-container">
+      <div className="header-div-container">
+        <div className="header-div-logo-container">
           <a href="#" target="_self">
             <img
               src="./images/Visually_timeline_app_logo.svg"
@@ -51,46 +51,46 @@ function Header({ user, setUser }) {
                     </nav> */}
         {/* </div> */}
 
-        <nav class="header-nav-account-container">
+        <nav className="header-nav-account-container">
           {/* <Link to="/">HOME</Link> */}
 
           {/* <Link to="/about">ABOUT</Link> */}
           {user.username ? (
-            ((<Link to="/admin">Admin</Link>),
+            ((<Link className="nav-a-button" to="/admin">Admin</Link>),
             (
               <a href="#" onClick={handleLogout}>
                 LOGOUT
               </a>
             ))
           ) : (
-            <Link to="/login">Login</Link>
+            <Link className="nav-a-button"   to="/login">Login</Link>
           )}
 
           {/* <Link to="/Login">Login</Link> */}
 
-          <div class="divider" />
+          <div className="divider" />
           <Link to="/signup">Sign Up</Link>
         </nav>
       </div>
 
-      <nav class="header-nav-lower-container">
-        <a class="nav-a-button" href="#" target="_self">
+      <nav className="header-nav-lower-container">
+        <a className="nav-a-button" href="#" target="_self">
           Timeline
         </a>
-        <div class="divider" />
-        <div class="divider" />
-        <a class="nav-a-button" href="#" target="_self">
+        <div className="divider" />
+        <div className="divider" />
+        <a className="nav-a-button" href="#" target="_self">
           Action
         </a>
-        <div class="divider" />
-        <div class="divider" />
-        <a class="nav-a-button" href="#" target="_self">
+        <div className="divider" />
+        <div className="divider" />
+        <a className="nav-a-button" href="#" target="_self">
           Explore
         </a>
       </nav>
 
       <div>
-        <i class="fa-solid fa-bars"></i>
+        <i className="fa-solid fa-bars"></i>
       </div>
     </header>
   );
