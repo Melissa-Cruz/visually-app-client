@@ -31,6 +31,7 @@ function Signup({user, setUser}) {
         console.log(result.data)
         console.log("success for sign up"); 
         localStorage.setItem("user", JSON.stringify(result.data));
+
         setUser(result.data);
         (navigate("/admin"));
        })

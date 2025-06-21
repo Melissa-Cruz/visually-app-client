@@ -4,8 +4,8 @@ function Home() {
   const [moments, setMoments] = useState([]);
 
   // const url = "https://visually.free.beeceptor.com/api/moments";
-  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;  
-  
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
   useEffect(() => {
     fetch(`${API_BASE_URL}/api/timelines`)
       .then((response) => response.json())
@@ -13,7 +13,7 @@ function Home() {
         console.log(result);
         setMoments(result.data.timelines);
       });
-  });
+  },[]);
 
   return (
     <main>

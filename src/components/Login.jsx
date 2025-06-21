@@ -1,48 +1,43 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-
-
-function Login({user,setUser}) {
+function Login({ user, setUser }) {
   const navigate = useNavigate();
-  
 
   if (user.username) {
     navigate("/admin");
   }
 
-  const handleLoginFormSubmit = (e) =>{
+  const handleLoginFormSubmit = (e) => {
     e.preventDefault();
 
     const body = {
-        username: e.target.username.value, 
-        password: e.target.password.value
-    }
+      username: e.target.username.value,
+      password: e.target.password.value,
+    };
 
-  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
-
-
-  fetch(`${API_BASE_URL}/auth/login/local`, {
-    method:"POST", 
-    headers: {
-        "Content-Type":"application/json"
-    },
-    body:JSON.stringify(body)
-})
-    .then((response) => response.json())
-    .then((result) => {
+    const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+    console.log(body);
+    
+    fetch(`${API_BASE_URL}/auth/login/local`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
+    })
+      .then((response) => response.json())
+      .then((result) => {
         console.log(result);
         console.log(result.data);
         console.log("success the Login");
         localStorage.setItem("user", JSON.stringify(result.data));
         setUser(result.data);
-        navigate("/admin")
+        navigate("/admin");
       })
-    // .then(navigate("/admin"))
-    .catch((error) => console.log(error));
-
-};
-
+      // .then(navigate("/admin"))
+      .catch((error) => console.log(error));
+  };
 
   return (
     <main>
@@ -95,7 +90,7 @@ function Login({user,setUser}) {
             <div className="form-div-spacing">
               <input
                 className="form-button-style"
-                type="button"
+                type="submit"
                 value="Submit"
               />
             </div>

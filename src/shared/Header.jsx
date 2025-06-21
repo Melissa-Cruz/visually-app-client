@@ -5,10 +5,11 @@ import { Link } from "react-router-dom";
 function Header({ user, setUser }) {
   const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
   const navigate = useNavigate();
-  const handleLogout = (e) => {};
+//   const handleLogout = (e) => {};
 
   // const url = "https://course-project-codesquad-comics-server.onrender.com/logout";
 
+  const handleLogout = (e)=>{
   fetch(`${API_BASE_URL}/auth/logout`, {
     method: "POST",
     headers: {
@@ -28,7 +29,7 @@ function Header({ user, setUser }) {
       console.log(error);
       navigate("/signup");
     });
-
+  };
   return (
     <header>
       <div class="header-div-container">
@@ -62,10 +63,10 @@ function Header({ user, setUser }) {
               </a>
             ))
           ) : (
-            <Link to="/Login">Login</Link>
+            <Link to="/login">Login</Link>
           )}
 
-{/* <Link to="/Login">Login</Link> */}
+          {/* <Link to="/Login">Login</Link> */}
 
           <div class="divider" />
           <Link to="/signup">Sign Up</Link>
