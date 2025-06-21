@@ -69,7 +69,7 @@ function Header({ user, setUser }) {
           {/* <Link to="/Login">Login</Link> */}
 
           <div className="divider" />
-          <Link to="/signup">Sign Up</Link>
+          <Link className="nav-a-button"  to="/signup">Sign Up</Link>
         </nav>
       </div>
 
