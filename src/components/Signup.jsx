@@ -164,8 +164,8 @@ function Signup({ user, setUser }) {
               </div>
             </form>
 
-            <div className="form-div-spacing">
-              <div className="form-div-spacing">Or</div>
+            {/* <div className="form-div-spacing"> */}
+              {/* <div className="form-div-spacing">Or</div>        */}
 
 
               {/* <button className="form-button-style" onClick={handleRegisterWithGoogle}> */}
@@ -178,7 +178,7 @@ function Signup({ user, setUser }) {
                   {/* Continue with Google */}
                 {/* </a>{" "} */}
               {/* </button> */}
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </div>
