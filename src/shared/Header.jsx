@@ -84,9 +84,11 @@ function Header({ user, setUser }) {
         </a>
         <div className="divider" />
         <div className="divider" />
+        <Link className="nav-a-button"   to="/explore">Explore</Link>
+{/* 
         <a className="nav-a-button" href="#" target="_self">
           Explore
-        </a>
+        </a> */}
       </nav>
 
       <div>
