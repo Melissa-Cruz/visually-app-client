@@ -45,6 +45,7 @@ function Signup({ user, setUser }) {
     e.preventDefault();
 
     fetch(`${API_BASE_URL}/auth/login/google`, {
+        mode:'cors',
         method: "GET",
         headers: {
           "Content-Type": "application/json",
