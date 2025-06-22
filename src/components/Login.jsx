@@ -99,7 +99,7 @@ function Login({ user, setUser }) {
               </div>
             </form>
 
-            <div className="form-div-spacing">
+            {/* <div className="form-div-spacing">
               <div className="form-div-spacing">Or</div>
               <button className="form-button-style">
                 <a href="#" target="_blank">
@@ -107,7 +107,7 @@ function Login({ user, setUser }) {
                   Continue with Google
                 </a>{" "}
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
