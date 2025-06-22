@@ -2,9 +2,21 @@ function Explore() {
   return (
     <main>
       <div className="body-div-container">
-        <h1> Explore other timelines and visions!</h1>
+        <div className="explore-div-container">
+        <h1> Explore other visions</h1>
         {/* <span>Share your moments.</span> */}
 
+
+        <div className="body-div-timeline-container-unit">
+          <h2>Vision: Hike Appalachian Trail: Main to Georgia</h2>
+
+          <img
+            className="timeline-example-image"
+            src="./images/mount-washington.jpg"
+            alt="Green hillish mountain top with blue sky, white clouds and blue puddles of water."
+          />
+          <p></p>
+        </div>
         <br />
 
         <div className="body-div-timeline-container-unit">
@@ -29,25 +41,15 @@ function Explore() {
         </div>
       <br/>
 
-        <div className="body-div-timeline-container-unit">
-          <h2>Vision: Hike Appalachian Trail: Main to Georgia</h2>
-
-          <img
-            className="timeline-example-image"
-            src="./images/mount-washington.jpg"
-            alt="Green hillish mountain top with blue sky, white clouds and blue puddles of water."
-          />
-          <p></p>
-        </div>
-
 
 
         
-        <br />
+
 
         {/* <div>
           <span>Click on an image to share to social media. </span>
         </div> */}
+      </div>
       </div>
     </main>
   );

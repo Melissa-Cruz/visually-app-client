@@ -4,7 +4,7 @@ import Action from "./components/Action";
 import ActionAddMoment from "./components/ActionAddMoment";
 import ActionViewMoment from "./components/ActionViewMoment";
 import Admin from "./components/Admin";
-import CreateNewTimeline from "./components/CreateNewTimeline";
+import CreateNewVision from "./components/CreateNewVision";
 import Home from "./components/Home";
 import Explore from "./components/Explore";
 import Login from "./components/Login";
@@ -31,7 +31,7 @@ function App() {
         <Route path="/action" element={<Action />} />
         <Route path="/actionaddmoment" element={<ActionAddMoment />} />
         <Route path="/actionviewmoment" element={<ActionViewMoment />} />
-        <Route path="/createnewtimeline" element={<CreateNewTimeline />} />
+        <Route path="/createnewvision" element={<CreateNewVision />} />
         <Route path="/explore" element={<Explore />} />
         {/* <Route path ="/register" element={<Signup user={user} setUser={setUser} />}/> */}
         <Route
