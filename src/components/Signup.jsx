@@ -166,13 +166,17 @@ function Signup({ user, setUser }) {
 
             <div className="form-div-spacing">
               <div className="form-div-spacing">Or</div>
-              <button className="form-button-style" onClick={handleRegisterWithGoogle}>
 
+
+              {/* <button className="form-button-style" onClick={handleRegisterWithGoogle}> */}
+                <form  action="${API_BASE_URL}/auth/login/google" method="GET">
+                    <input className="form-button-style" type="submit" value="Continue with Google"/>
+                </form>
                 {/* <a href="#" target="_blank">
                   {" "} */}
-                  Continue with Google
+                  {/* Continue with Google */}
                 {/* </a>{" "} */}
-              </button>
+              {/* </button> */}
             </div>
           </div>
         </div>
