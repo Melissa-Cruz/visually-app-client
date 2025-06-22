@@ -176,7 +176,7 @@
     /* display: inline-block; */
     top: -1%;
     width: 20%;
-    height:2%;
+    height:1%;
     left: 1%;
     /* align-items: end; */
     /* flex-grow: 1; */
@@ -367,8 +367,8 @@
   }
   
   .form-button-style{ 
-    background-color: var(--form_button_color);
-    border-color: var(--form_button_color);
+    background-color: var(--green);
+    border-color: var(--green);
     border-style: none;
   
     color:var(--white);
@@ -377,7 +377,7 @@
     padding-left: 10%;
     padding-top: 2%;
     padding-bottom: 2%;
-    border-radius: 10%;
+    border-radius: 15px;
   
     border-style: none; 
     border-color: none;
