@@ -44,11 +44,12 @@ function Signup({ user, setUser }) {
   const handleRegisterWithGoogle = (e) =>{
     e.preventDefault();
 
-    fetch(`${API_BASE_URL}/auth/login/google`, {
+    fetch(`${API_BASE_URL}/auth/login/google`,  {
         mode:'cors',
         method: "GET",
         headers: {
           "Content-Type": "application/json",
+          
         },
         // body: JSON.stringify(body),
       })
