@@ -30,6 +30,8 @@ function Explore() {
 
         <div className="body-div-timeline-container-unit">
           <h2>Vision: Hike Appalachian Trail</h2>
+          <h3>From Main to Georgia</h3>
+
           <img
             className="timeline-example-image"
             src="public/images/mount-washington.jpg"
