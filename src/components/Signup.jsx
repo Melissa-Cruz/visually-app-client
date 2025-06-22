@@ -169,9 +169,10 @@ function Signup({ user, setUser }) {
 
 
               {/* <button className="form-button-style" onClick={handleRegisterWithGoogle}> */}
-                <form  action="https://visually-app-server.onrender.com/auth/login/google" method="GET">
+              {/* the form below was it closes it came to working but  there's something off and need to move on  */}
+                {/* <form  action="https://visually-app-server.onrender.com/auth/login/google" method="GET">
                     <input className="form-button-style" type="submit" value="Continue with Google"/>
-                </form>
+                </form> */}
                 {/* <a href="#" target="_blank">
                   {" "} */}
                   {/* Continue with Google */}
