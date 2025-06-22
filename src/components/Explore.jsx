@@ -2,8 +2,8 @@ function Explore() {
   return (
     <main>
       <div className="body-div-container">
-        <h1>Celebrate Yourself</h1>
-        <span>Share your moments.</span>
+        <h1> Explore other timelines and visions!</h1>
+        {/* <span>Share your moments.</span> */}
 
         <br />
 
@@ -16,7 +16,7 @@ function Explore() {
           />
           <p></p>
         </div>
-        <br></br>
+        <br/>
 
         <div className="body-div-timeline-container-unit">
           <h2>Vision: Fitness Studio Owner</h2>
@@ -27,7 +27,7 @@ function Explore() {
           />
           <p></p>
         </div>
-      <br></br>
+      <br/>
 
         <div className="body-div-timeline-container-unit">
           <h2>Vision: Hike Appalachian Trail: Main to Georgia</h2>
@@ -45,9 +45,9 @@ function Explore() {
         
         <br />
 
-        <div>
+        {/* <div>
           <span>Click on an image to share to social media. </span>
-        </div>
+        </div> */}
       </div>
     </main>
   );
