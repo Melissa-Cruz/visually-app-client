@@ -7,6 +7,8 @@ function Signup({ user, setUser }) {
     navigate("/admin");
   }
 
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
   const handleSignupFormSubmit = (e) => {
     e.preventDefault();
 
@@ -17,7 +19,6 @@ function Signup({ user, setUser }) {
       username: e.target.username.value,
       password: e.target.password.value,
     };
-    const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
     fetch(`${API_BASE_URL}/auth/register`, {
       method: "POST",
@@ -38,6 +39,35 @@ function Signup({ user, setUser }) {
       })
       .catch((error) => console.log(error));
   };
+
+
+  const handleRegisterWithGoogle = (e) =>{
+    e.preventDefault();
+
+    fetch(`${API_BASE_URL}/auth/login/google`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        // body: JSON.stringify(body),
+      })
+        // .then((response) => response.json())
+        // .then((result) => {
+        //   console.log(result);
+        //   console.log(result.data);
+        //   console.log("success for sign up");
+        //   localStorage.setItem("user", JSON.stringify(result.data));
+  
+        //   setUser(result.data);
+        //   navigate("/admin");
+        // })
+        // .catch((error) => console.log(error));
+    };
+  
+
+
+//   }
+
 
   return (
     <main>
@@ -134,11 +164,12 @@ function Signup({ user, setUser }) {
 
             <div className="form-div-spacing">
               <div className="form-div-spacing">Or</div>
-              <button className="form-button-style">
-                <a href="#" target="_blank">
-                  {" "}
+              <button className="form-button-style" onClick={handleRegisterWithGoogle}>
+
+                {/* <a href="#" target="_blank">
+                  {" "} */}
                   Continue with Google
-                </a>{" "}
+                {/* </a>{" "} */}
               </button>
             </div>
           </div>
