@@ -16,6 +16,7 @@ function Explore() {
           />
           <p></p>
         </div>
+        <br></br>
 
         <div className="body-div-timeline-container-unit">
           <h2>Vision: Fitness Studio Owner</h2>
@@ -26,7 +27,7 @@ function Explore() {
           />
           <p></p>
         </div>
-
+      <br></br>
 
         <div className="body-div-timeline-container-unit">
           <h2>Vision: Hike Appalachian Trail: Main to Georgia</h2>
