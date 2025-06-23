@@ -57,7 +57,7 @@ function CreateNewVision() {
 
             <div className="drop-area">Upload collage here.</div>
 
-            <form className="moment-form" onSubmit={handleCreateNewVision}">
+            <form className="moment-form" onSubmit={handleCreateNewVision}>
               <div>
                 <label htmlFor="timeline_name"> Timeline Name:</label>
                 <input type="text" name="timeline_name" id="timeline_name" />
