@@ -6,6 +6,14 @@ function CreateNewVision() {
   const navigate = useNavigate();
   const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
+  const [formData, setFormData] = useState({
+    timeline_name:"", 
+    timeline_description:"",
+    timeline_start_date:"",
+    timeline_steps:""
+
+  });
+
   const handleCreateNewVision = (e) =>{
     e.preventDefault();
 
@@ -29,9 +37,8 @@ function CreateNewVision() {
       console.log(result);
       console.log(result.data);
       console.log("uploaded a new vision");
-      // localStorage.setItem("user", JSON.stringify(result.data));
-
-      // setUser(result.data);
+      localStorage.setItem("body", JSON.stringify(result.data));
+      setUser(result.data);
       navigate("/timeline");
     })
     .catch((error) => console.log(error));
@@ -59,7 +66,7 @@ function CreateNewVision() {
 
             <form className="moment-form" onSubmit={handleCreateNewVision}>
               <div>
-                <label htmlFor="timeline_name"> Timeline Name:</label>
+                <label htmlFor="timeline_name"> Vision Name:</label>
                 <input type="text" name="timeline_name" id="timeline_name" />
               </div>
 
