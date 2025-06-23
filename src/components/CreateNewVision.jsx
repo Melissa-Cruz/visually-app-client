@@ -73,12 +73,12 @@ function CreateNewVision() {
                     {" "}
                     Why do you want to pursue this vision?:
                   </label>
-                  <textarea
+                  {/* <textarea
                     type="textarea"
                     name="timeline_description"
                     id="timeline"
                   ></textarea>
-                </div>
+                </div> */}
 
                 <div>
                   <label htmlFor="timeline_start_date">
