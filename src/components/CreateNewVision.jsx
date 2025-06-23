@@ -3,6 +3,41 @@ import { useNavigate } from "react-router-dom";
 
 
 function CreateNewVision() {
+  const navigate = useNavigate();
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+  const handleCreateNewVision = (e) =>{
+    e.preventDefault();
+
+    const body = {
+      timeline_name: e.target.timeline_name.value,
+      timeline_description: e.target.timeline_description,
+      timeline_start_date: e.target.timeline_start_date,
+      timeline_steps: e.target.timeline_steps,
+      
+    }; 
+
+    fetch(`${API_BASE_URL}/api/create/new`, {
+      method:"POST",
+      headers:{
+        "Content-Type":"application/json",
+      },
+      body:JSON.stringify(body),
+    })
+    .then((response) => response.json())
+    .then((result) => {
+      console.log(result);
+      console.log(result.data);
+      console.log("uploaded a new vision");
+      // localStorage.setItem("user", JSON.stringify(result.data));
+
+      // setUser(result.data);
+      navigate("/timeline");
+    })
+    .catch((error) => console.log(error));
+
+  }
+
   return (
     <main>
       <div className="body-div-container">
@@ -22,7 +57,7 @@ function CreateNewVision() {
 
             <div className="drop-area">Upload collage here.</div>
 
-            <form className="moment-form">
+            <form className="moment-form" onSubmit={handleCreateNewVision}">
               <div>
                 <label htmlFor="timeline_name"> Timeline Name:</label>
                 <input type="text" name="timeline_name" id="timeline_name" />
@@ -51,14 +86,14 @@ function CreateNewVision() {
                 />
               </div>
 
-              <div>
+              {/* <div>
                 <label htmlFor="moment_milestones"> Milestone:</label>
                 <input
                   type="text"
                   name="moment_milestones"
                   id="moment_milestones"
                 />
-              </div>
+              </div> */}
 
               <div>
                 <label htmlFor="timeline_steps"> Steps:</label>
