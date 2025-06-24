@@ -5,12 +5,16 @@ function CreateNewVision() {
   const navigate = useNavigate();
   const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
+
+  const [formData, setFormData] = useState(localStorage.getItem("formData") || {});
+
   // const [formData, setFormData] = useState({
   //   timeline_name: "",
   //   timeline_description: "",
   //   timeline_start_date: "",
   //   timeline_steps: "",
   // });
+
 
   const handleCreateNewVision = (e) => {
     e.preventDefault();
@@ -42,8 +46,8 @@ function CreateNewVision() {
         console.log(result);
         console.log(result.data);
         console.log("uploaded a new vision");
-        // localStorage.setItem("body", JSON.stringify(result.data));
-        // setUser(result.data);
+        localStorage.setItem("formData", JSON.stringify(result.data));
+        setFormData(result.data);
         navigate("/timeline");
       })
       .catch((error) => console.log(error));
