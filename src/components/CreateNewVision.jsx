@@ -17,16 +17,16 @@ function CreateNewVision() {
 
     const body = {
       timeline_name: e.target.timeline_name.value,
-      timeline_description: e.target.timeline_description,
-      timeline_start_date: e.target.timeline_start_date,
-      timeline_steps: e.target.timeline_steps,
+      timeline_description: e.target.timeline_description.value,
+      timeline_start_date: e.target.timeline_start_date.value,
+      timeline_steps: e.target.timeline_steps.value,
     };
     console.log(body);
 
     console.log(e.target.timeline_name.value);
-    console.log(e.target.timeline_description);
-    console.log(e.target.timeline_start_date);
-    console.log(e.target.timeline_steps);
+    console.log(e.target.timeline_description.value);
+    console.log(e.target.timeline_start_date.value);
+    console.log(e.target.timeline_steps.value);
 
     fetch(`${API_BASE_URL}/api/create/new`, {
       method: "POST",
