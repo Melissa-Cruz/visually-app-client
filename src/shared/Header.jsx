@@ -34,12 +34,12 @@ function Header({ user, setUser }) {
     <header>
       <div className="header-div-container">
         <div className="header-div-logo-container">
-        <Link className="nav-a-button"   to="/">
+          <a href="https://visuallygoals.netlify.app/" target="_self">
             <img
               src="./images/Visually_timeline_app_logo.svg"
               alt="the company logo is the word visually written in cursive font in a red-pink color"
             />
-            </Link>
+          </a>
         </div>
 
         {/* <div class="header-nav-account-container"> */}
@@ -74,6 +74,7 @@ function Header({ user, setUser }) {
       </div>
 
       <nav className="header-nav-lower-container">
+
         <Link className="nav-a-button"   to="/timeline">Visions</Link>
         <div className="divider" />
         <div className="divider" />
