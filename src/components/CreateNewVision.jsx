@@ -28,9 +28,6 @@ function CreateNewVision() {
     console.log(e.target.timeline_start_date);
     console.log(e.target.timeline_steps);
 
-
-
-
     fetch(`${API_BASE_URL}/api/create/new`, {
       method: "POST",
       headers: {
@@ -85,9 +82,9 @@ function CreateNewVision() {
                   <textarea
                     type="text"
                     name="timeline_description"
-                    id="timeline"
+                    id="timeline_description"
                   ></textarea>
-                </div> 
+                </div>
 
                 <div>
                   <label htmlFor="timeline_start_date">
