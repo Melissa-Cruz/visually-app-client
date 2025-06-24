@@ -36,9 +36,8 @@ function Timeline() {
           <br />
         </div>
         <br />
-        <div>
-        <Link className="nav-a-button"   to="/createnewvision">Add a New Vision</Link>
-      </div>
+        <Link className="form-button-style" to="/createnewvision">Add a New Vision</Link>
+
 
       </div>
 
