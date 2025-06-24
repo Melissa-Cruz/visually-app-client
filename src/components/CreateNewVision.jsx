@@ -23,17 +23,25 @@ function CreateNewVision() {
     };
     console.log(body);
 
+    console.log(e.target.timeline_name.value);
+    console.log(e.target.timeline_description);
+    console.log(e.target.timeline_start_date);
+    console.log(e.target.timeline_steps);
+
+
+
+
     fetch(`${API_BASE_URL}/api/create/new`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body:JSON.stringify(body),
+      body: JSON.stringify(body),
     })
       .then((response) => response.json())
       .then((result) => {
-        console.log("body is ... ");
-        console.log(body);
+        // console.log("body is ... ");
+        // console.log(body);
         console.log(result);
         console.log(result.data);
         console.log("uploaded a new vision");
