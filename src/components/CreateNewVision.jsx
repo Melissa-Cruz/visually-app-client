@@ -5,12 +5,12 @@ function CreateNewVision() {
   const navigate = useNavigate();
   const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
-  const [formData, setFormData] = useState({
-    timeline_name: "",
-    timeline_description: "",
-    timeline_start_date: "",
-    timeline_steps: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   timeline_name: "",
+  //   timeline_description: "",
+  //   timeline_start_date: "",
+  //   timeline_steps: "",
+  // });
 
   const handleCreateNewVision = (e) => {
     e.preventDefault();
@@ -21,6 +21,7 @@ function CreateNewVision() {
       timeline_start_date: e.target.timeline_start_date,
       timeline_steps: e.target.timeline_steps,
     };
+    console.log(body);
 
     fetch(`${API_BASE_URL}/api/create/new`, {
       method: "POST",
@@ -36,8 +37,8 @@ function CreateNewVision() {
         console.log(result);
         console.log(result.data);
         console.log("uploaded a new vision");
-        localStorage.setItem("body", JSON.stringify(result.data));
-        setUser(result.data);
+        // localStorage.setItem("body", JSON.stringify(result.data));
+        // setUser(result.data);
         navigate("/timeline");
       })
       .catch((error) => console.log(error));
