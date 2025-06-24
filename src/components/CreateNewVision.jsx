@@ -77,8 +77,8 @@ function CreateNewVision() {
                     type="textarea"
                     name="timeline_description"
                     id="timeline"
-                  ></textarea>
-                </div> */}
+                  ></textarea>*/}
+                </div> 
 
                 <div>
                   <label htmlFor="timeline_start_date">
