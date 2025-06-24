@@ -74,9 +74,7 @@ function Header({ user, setUser }) {
       </div>
 
       <nav className="header-nav-lower-container">
-        <a className="nav-a-button" href="#" target="_self">
-          Timeline
-        </a>
+        <Link className="nav-a-button"   to="/timeline">Visions</Link>
         <div className="divider" />
         <div className="divider" />
         <Link className="nav-a-button"   to="/createnewvision">Add a Vision</Link>

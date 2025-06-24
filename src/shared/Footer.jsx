@@ -5,17 +5,19 @@ function Footer(){
             <div>
                 <h3>Links</h3>
                 <div>
-                    <a href="#" target="_self">Home</a>
+
+
+       
+                <Link  to="/">Home</Link>
+
                 </div>
                 <div>
-                    <a href="#" target="_self">Timeline</a>
+                <Link to="/timeline">Visions</Link>                </div>
+                <div>
+                <Link to="/createnewvision">Add a Vision</Link>
                 </div>
                 <div>
-                    <a href="#" target="_self">Action</a>
-                </div>
-                <div>
-                    <a href="#" target="_self">Explore</a>
-                </div>
+<Link  to="/explore">Explore</Link>                </div>
             </div>
 
             <div>

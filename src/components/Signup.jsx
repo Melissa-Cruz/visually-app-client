@@ -35,7 +35,7 @@ function Signup({ user, setUser }) {
         localStorage.setItem("user", JSON.stringify(result.data));
 
         setUser(result.data);
-        navigate("/admin");
+        navigate("/login");
       })
       .catch((error) => console.log(error));
   };

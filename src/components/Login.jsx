@@ -5,7 +5,7 @@ function Login({ user, setUser }) {
   const navigate = useNavigate();
 
   if (user.username) {
-    navigate("/admin");
+    navigate("/createnewvision");
   }
 
   const handleLoginFormSubmit = (e) => {
@@ -33,7 +33,7 @@ function Login({ user, setUser }) {
         console.log("success the Login");
         localStorage.setItem("user", JSON.stringify(result.data));
         setUser(result.data);
-        navigate("/admin");
+        navigate("/createnewvision");
       })
       // .then(navigate("/admin"))
       .catch((error) => console.log(error));
