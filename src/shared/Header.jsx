@@ -35,13 +35,11 @@ function Header({ user, setUser }) {
       <div className="header-div-container">
         <div className="header-div-logo-container">
         <Link className="nav-a-button"   to="/">
-
             <img
               src="./images/Visually_timeline_app_logo.svg"
               alt="the company logo is the word visually written in cursive font in a red-pink color"
             />
             </Link>
-          </a>
         </div>
 
         {/* <div class="header-nav-account-container"> */}
