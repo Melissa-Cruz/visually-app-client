@@ -28,7 +28,7 @@ function CreateNewVision() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(body),
+      body:JSON.stringify(body),
     })
       .then((response) => response.json())
       .then((result) => {
@@ -74,11 +74,11 @@ function CreateNewVision() {
                     {" "}
                     Why do you want to pursue this vision?:
                   </label>
-                  {/* <textarea
-                    type="textarea"
+                  <textarea
+                    type="text"
                     name="timeline_description"
                     id="timeline"
-                  ></textarea>*/}
+                  ></textarea>
                 </div> 
 
                 <div>
