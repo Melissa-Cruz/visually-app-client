@@ -1,12 +1,58 @@
-# React + Vite
+# Visually
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ 
+## About The Project
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<!-- Insert a project screenshot here -->
 
-## Expanding the ESLint configuration
+This project has the front-end code for our personal project. The goal of the project is to implement a CRUD app  where the  user can create/add a new timeline to the collection, read and view the details of the timeline, update the timeline information and delete. This project was part of the coursework and is still a work in progress. 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The client side is deployed with Netlify and the server side with Render. 
+
+### Future Tasks 
+ - adjusting the sizing
+ - changing the layout to a traditional asthetic
+ - updating the form content
+ - fixing the user login
+ - rendering user entries 
+
+[Visually](https://visuallygoals.netlify.app/)
+
+
+### Built With
+
+<!-- Add more if your technologies are not listed -->
+<!-- Comment (or remove) the ones you are not using yet -->
+
+- [React.js](https://reactjs.org/)
+- [MongoDB](https://www.mongodb.com/)
+- [Render](https://render.com/)
+- [Netlify](https://www.netlify.com/)
+- [Express]
+
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Meissa Cruz
+
+- LinkedIn: [@melicruz](https://linkedin.com/in/melicruz)
+Project Link: [https://github.com/Melissa-Cruz/codesquad-comics-server]()
+
+<p style="text-align: right;">(<a href="#top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+
+## Acknowledgments
+
+- [Choose an Open Source License](https://choosealicense.com)
+- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+- [GitHub Pages](https://pages.github.com)
+- [Font Awesome](https://fontawesome.com)
+- [React Icons](https://react-icons.github.io/react-icons/search)
+- [CodeSquad](https://codesquad.org/)
+
+<p style="text-align: right;">(<a href="#top">back to top</a>)</p>
